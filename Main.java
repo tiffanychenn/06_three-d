@@ -8,6 +8,10 @@ public class Main {
         Matrix trans = new Matrix(4, 4);
         ArrayList<String> commands = Parser.parse("script");
         Parser.execute(edge, trans, commands, i);
+        edge = new Matrix(4, 4);
+        trans = new Matrix(4, 4);
+        commands = Parser.parse("script1");
+        Parser.execute(edge, trans, commands, i);
     }
 
 }
